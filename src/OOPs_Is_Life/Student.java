@@ -12,6 +12,15 @@ public class Student {
         System.out.println("Student Default ctor called");
     }
 
+    // Parametereised constructor
+    public Student(int id,int age,String name,int nos){
+        System.out.println("Student Parameterised constructor Called");
+        this.id = id;
+        this.age = age;
+        this.name = name;
+        this.nos = nos;
+    }
+
     //Methods / Behaviours
     public void study(){
         System.out.println(name + " Studying");
