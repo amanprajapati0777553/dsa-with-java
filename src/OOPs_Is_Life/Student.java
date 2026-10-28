@@ -21,6 +21,15 @@ public class Student {
         this.nos = nos;
     }
 
+    //Copy constructor
+    public Student(Student sroobj){   //  srcobj -> A
+        System.out.println("Student Copy constructor Called");
+        this.id = sroobj.id;
+        this.age = sroobj.age;
+        this.name = sroobj.name;
+        this.nos = sroobj.nos;
+    }
+
     //Methods / Behaviours
     public void study(){
         System.out.println(name + " Studying");
